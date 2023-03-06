@@ -1,0 +1,37 @@
+#Fisrt example usage of module
+
+module "resource_naming" {
+  source = "./resource_naming"
+
+  domain      = "reporting"
+}
+
+#Second Example 
+
+module "resource_naming" {
+  source = "./resource_naming"
+
+  domain      = "data"
+  service_name = "foobar"
+}
+
+# Third Example
+
+module "resource_naming" {
+  source = "./resource_naming"
+
+  domain      = "reporting"
+  environment = "development"
+}
+
+#Fourth example
+
+module "resource_naming" {
+  source = "./resource_naming"
+
+  domain      = "data"
+  environment = "production"
+  service_name = "foobar"
+}
+
+
