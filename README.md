@@ -20,22 +20,6 @@ The output of the module will be the full name of the resource, which can be use
 - Terraform >= 0.12.0
 - AWS provider >= 2.70.0
 
-## Inputs
-
-| Name          | Description                                             | Type   | Default       | Required |
-|---------------|---------------------------------------------------------|--------|---------------|----------|
-| domain        | The domain of the AWS resource (accepted values only)   | string | n/a           | yes      |
-| service_name  | The name of the AWS resource (alphanumeric, no spaces) | string | ""            | no       |
-| environment   | The environment of the AWS resource (accepted values only) | string | "development" | no       |
-| delimiter     | The delimiter used to separate the naming components   | string | "-"           | no       |
-| output_case   | The case of the output name (lower, title, or upper)   | string | "lower"       | no       |
-
-## Outputs
-
-| Name  | Description                        |
-|-------|------------------------------------|
-| name  | The full name of the AWS resource  |
-
 ## Accepted values
 
 The following are the accepted values for the `domain` and `environment` inputs:
