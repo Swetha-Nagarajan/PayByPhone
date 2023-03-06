@@ -1,12 +1,14 @@
+# Configure AWS provider
+provider "aws" {
+  region = "us-west-2"
+}
 
-
+# Define random_id resource
 resource "random_id" "service_name_random" {
-  keepers = {
-    domain = var.domain
-  }
-
   byte_length = 4
 }
+
+# Define locals block
 
 locals {
   reordered_components = sort(var.components_list)
