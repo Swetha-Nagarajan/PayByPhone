@@ -1,5 +1,5 @@
 # Output variable definitions
 
-output "resource_name" {
-  value = join(var.delimiter, [ for component in sort(local.name_components_ordered): local.name_components_ordered[component] ])
+output "name" {
+  value = var.case == "title" ? title(local.name) : var.case == "upper" ? upper(local.name) : lower(local.name)
 }
