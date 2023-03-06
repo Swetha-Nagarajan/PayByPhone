@@ -18,3 +18,5 @@ locals {
   name_components = [for c in name_components : c if c != null]
   name = join(var.delimiter, name_components)
 }
+
+    
