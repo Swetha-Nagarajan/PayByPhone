@@ -1,12 +1,9 @@
-# Configure AWS provider
-provider "aws" {
-  region = "us-west-2"
-}
-
 # Define random_id resource
+
 resource "random_id" "service_name_random" {
   byte_length = 4
 }
+
 
 # Define locals block
 
