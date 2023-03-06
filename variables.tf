@@ -1,6 +1,6 @@
 # Input variable definitions
 
-
+/*
 variable "domain" {
   type        = string
   description = "The domain of the PBP AWS resource"
@@ -54,3 +54,5 @@ variable "name_components_order" {
     error_message = "All name components must be unique"
   }
 }
+*/
+  
