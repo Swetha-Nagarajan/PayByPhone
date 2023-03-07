@@ -1,3 +1,10 @@
+#missed provider block ( added )
+# Provider Block
+provider "aws" {
+  region  = "us-west-2"
+  profile = "default"
+}
+
 # Define random_id resource
 
 resource "random_id" "service_name_random" {
@@ -18,5 +25,4 @@ locals {
   name_components = [for c in name_components : c if c != null]
   name = join(var.delimiter, name_components)
 }
-
-    
+   
