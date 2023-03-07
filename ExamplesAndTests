@@ -6,11 +6,6 @@ module "aws_resource_naming" {
   domain      = "reporting"
 }
 
-  
-resource "aws_s3_bucket" "example" {
-bucket = module.aws_resource_naming.name
-}
-
 #Second Example 
 
 module "aws_resource_naming" {
@@ -20,12 +15,6 @@ module "aws_resource_naming" {
   service_name = "foobar"
 }
 
-  
-resource "aws_s3_bucket" "example" {
-bucket = module.aws_resource_naming.name
-}
-
-
 # Third Example
 
 module "aws_resource_naming" {
@@ -34,12 +23,6 @@ module "aws_resource_naming" {
   domain      = "reporting"
   environment = "development"
 }
-
-  
-resource "aws_s3_bucket" "example" {
-bucket = module.aws_resource_naming.name
-}
-
 
 
 #Fourth example
@@ -52,8 +35,4 @@ module "aws_resource_naming" {
   service_name = "foobar"
 }
 
-  
-resource "aws_s3_bucket" "example" {
-bucket = module.aws_resource_naming.name
-}
 
