@@ -69,6 +69,7 @@ locals {
      var.environment,
 
     ]
+  max_resource_length = 50
 }
 
 
