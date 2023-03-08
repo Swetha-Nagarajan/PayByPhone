@@ -7,10 +7,10 @@ provider "aws" {
 
 module "aws_resource_naming" {
   source        = "./aws_resource_naming"
-  domain        = ""
-  service_name  = ""
-  environment   = ""
-  delimiter     = ""
-  case_style    = ""
+  domain        = "data"
+  service_name  = "foobar"
+  environment   = "production"
+  delimiter     = "-"
+  case_style    = "lower"
 }
 
